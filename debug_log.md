@@ -15,7 +15,10 @@ _Then I noticed another bug ..._
 
 ## Exercise 1
 
-[[Your answer goes here!]]
+[["TypeError: 'topping' is an invalid keyword argument for PizzaTopping" where the variable access is incorrectly.
+-- On line 84 it says "werkzeug.routing.BuildError: Could not build url for endpoint '/'.
+ I have changed the redirect from `redirect(url_for('/'))` to `redirect('/')`
+]]
 
 ## Exercise 2
 
