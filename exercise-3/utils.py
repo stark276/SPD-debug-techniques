@@ -34,7 +34,7 @@ def merge_sort(arr):
         i += 1
 
     while j < len(right_side):
-        arr[k] = right_side[i]
+        arr[k] = right_side[j]
         j += 1
 
 def binary_search(arr, elem):
@@ -43,21 +43,20 @@ def binary_search(arr, elem):
     high = len(arr) - 1
     mid = 0
   
-    while low < high: 
+    while low < high:
   
         mid = (high + low) / 2
   
-        # Check if elem is present at mid 
-        if arr[mid] < elem: 
+        # Check if element is present at middle
+        if arr[int(mid)] < elem: 
             low = mid + 1
   
         # If elem is greater, ignore left half 
-        elif arr[mid] > elem: 
+        elif arr[int(mid)] > elem: 
             high = mid - 1
   
         # If elem is smaller, ignore right half 
         else: 
             return mid 
   
-    # If we reach here, then the element was not present 
     return -1

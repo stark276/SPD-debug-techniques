@@ -22,8 +22,12 @@ _Then I noticed another bug ..._
 
 ## Exercise 2
 
-[[Your answer goes here!]]
+[[The output was the temperate at the city submitted but the output is an API error. An Internal Server Error is thrown with a backend message of "'city': result_json['name'], KeyError: 'name'". This is thrown because something is wrong with the API call.
+]]
 
 ## Exercise 3
 
-[[Your answer goes here!]]
+
+[[Actual output is a list indexing error. The first error I get when running the file is "arr[k] = right_side[i] IndexError: list index out of range". This tells me that a list is being sorted through incorrectly.
+
+I changed arr[k] = right_side[i] to arr[k] = right_side[j]. Another error saying "TypeError: list indices must be integers or slices, not float" came afterwards. I fixed this by wrapping the mid variable as an integer.]]
